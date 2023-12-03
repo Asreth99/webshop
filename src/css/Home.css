@@ -1,0 +1,53 @@
+.hcontainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: silver;
+  padding-bottom: 100px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-container {
+  width: 45%;
+}
+
+.image-container .img {
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
+  width: 45%;
+  text-align: center;
+}
+
+.text-container p {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .image-container,
+  .text-container {
+    width: 100%; 
+  }
+
+  .text-container p {
+    font-size: 18px; 
+  }
+}
