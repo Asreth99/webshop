@@ -172,8 +172,7 @@ function MainContent() {
                 <div
                   className="btn" onClick={() => {
 
-                    
-                    getProduct();
+                    getProduct(item.id);
 
                   } }>
                   Módosítás
