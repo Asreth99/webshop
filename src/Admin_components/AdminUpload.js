@@ -11,7 +11,7 @@ const AdminUpload = () => {
   const [category, setCategory] = useState();
 
   const handleTermek = () => {
-    axios.post("http://localhost:8888/addTermek", { name, price, description,category }) 
+    axios.post("https://webshopnodedeploy.azurewebsites.net/addTermek", { name, price, description,category }) 
       .then((response) => {
         console.log("SIKER");
         console.log(response.data);

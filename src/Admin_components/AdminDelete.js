@@ -7,7 +7,7 @@ const AdminDelete = () => {
 
     const[name,setName] = useState();
     const deleteTermek = () => {
-        axios.post(`http://localhost:8888/delete/${name}`) 
+        axios.post(`https://webshopnodedeploy.azurewebsites.net/delete/${name}`) 
           .then((response) => {
             console.log("SIKER");
             console.log(response.data);

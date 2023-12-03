@@ -20,11 +20,11 @@ const Checkout = () => {
   /*TODO a navigate fog majd elirányítani a visszaigazolós oldalra*/
   const handleCheckout = async () => {
     try {
-      await axios.post(`http://localhost:8888/clearCart/${userID}`).then((response) => {
+      await axios.post(`https://webshopnodedeploy.azurewebsites.net/clearCart/${userID}`).then((response) => {
         console.log("Termékek kitörölve: ", response.data);
       })
 
-      await axios.post("http://localhost:8888/submitRendeles", {
+      await axios.post("https://webshopnodedeploy.azurewebsites.net/submitRendeles", {
         orszag, varos, iranyitoszam, utca_hazszam, fizetesi_mod, szallitasi_mod, userID
       });
 

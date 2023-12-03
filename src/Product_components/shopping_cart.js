@@ -31,7 +31,7 @@ function ShoppingCart({
   };
 
   useEffect(() => {
-    axios.get("http://localhost:8888/kosar",{params:{userID}})
+    axios.get("https://webshopnodedeploy.azurewebsites.net/kosar",{params:{userID}})
       .then((response) => {
         setCartData(response.data.kosar);
       })
@@ -41,7 +41,7 @@ function ShoppingCart({
   }, [userID]);
   const removeCart = (productId) => {
     axios
-      .post(`http://localhost:8888/deleteKosarbol/${productId}`)
+      .post(`https://webshopnodedeploy.azurewebsites.net/deleteKosarbol/${productId}`)
       .then((response) => {
         console.log("Termék kitörölve: ", response.data);
         setCartData((prevData) =>

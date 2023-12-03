@@ -29,7 +29,7 @@ const SupportPage = () => {
 
   useEffect(()=>{
 
-    axios.get("http://localhost:8888/getAllQuestion")
+    axios.get("https://webshopnodedeploy.azurewebsites.net/getAllQuestion")
     .then(response =>{
       setQuestion(response.data.kerdesek);
     })

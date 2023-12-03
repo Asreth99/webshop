@@ -9,7 +9,7 @@ function ModifyProduct() {
   const [answer, setAnswer] = useState(chosenQuestion.valasz || '');
   
   const handleModify = (id) => {
-    axios.post(`http://localhost:8888/modifyQuestion/${id}`, { question,answer })
+    axios.post(`https://webshopnodedeploy.azurewebsites.net/modifyQuestion/${id}`, { question,answer })
   .then(response => {
     console.log(response.data);
   })

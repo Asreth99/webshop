@@ -13,7 +13,7 @@ const SupportEdit = () => {
 
   const getquestion = (questionID)=>{
 
-    axios.get(`http://localhost:8888/getOneQuestion/${questionID}`)
+    axios.get(`https://webshopnodedeploy.azurewebsites.net/getOneQuestion/${questionID}`)
     .then((response)=>{
       localStorage.setItem('kerdes',JSON.stringify(response.data));
       navigate('/modifyQuestion')
@@ -27,7 +27,7 @@ const SupportEdit = () => {
 
   useEffect(()=>{
 
-    axios.get("http://localhost:8888/getAllQuestion")
+    axios.get("https://webshopnodedeploy.azurewebsites.net/getAllQuestion")
     .then(response =>{
       setQuestion(response.data.kerdesek);
     })

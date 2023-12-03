@@ -9,7 +9,7 @@ const AddQuestion = () => {
   const [answer, setAnswer] = useState("");
 
   const addQuestion = () =>{
-    axios.post("http://localhost:8888/addQuestion",{question,answer})
+    axios.post("https://webshopnodedeploy.azurewebsites.net/addQuestion",{question,answer})
     .then((response)=>{
       console.log("Question Added")
     })

@@ -11,7 +11,7 @@ function ModifyProduct() {
   const [category, setCategory] = useState(product.kategoria || '');
 
   const handleModify = (id) => {
-    axios.post(`http://localhost:8888/modifyProduct/${id}`, { name, price, description, category })
+    axios.post(`https://webshopnodedeploy.azurewebsites.net/modifyProduct/${id}`, { name, price, description, category })
   .then(response => {
     console.log(response.data);
   })

@@ -23,14 +23,14 @@ const LoginSignup = () => {
 
   const handleRegister = () => {
   
-    axios.post("http://localhost:8888/registerUser", { email, password, role }) 
+    axios.post("https://webshopnodedeploy.azurewebsites.net/registerUser", { email, password, role }) 
       .then((response) => {
         setShowSignUpPopup(true);
       });
   };
 
   const handleLogin = () => {
-    axios.post("http://localhost:8888/loginuser", { email, password}) 
+    axios.post("https://webshopnodedeploy.azurewebsites.net/loginuser", { email, password}) 
       .then((response) => {
         if (response.data.accessToken) {
           localStorage.setItem("user", JSON.stringify(response.data));

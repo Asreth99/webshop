@@ -10,7 +10,7 @@ const Profile = () => {
   const handleDeleteUser = () => {
     const email = user.email;
     console.log("Email: "+user.email);
-    axios.post("http://localhost:8888/deleteUser",{email})
+    axios.post("https://webshopnodedeploy.azurewebsites.net/deleteUser",{email})
     
     .then((response) => {
       console.log(response.data);

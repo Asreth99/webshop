@@ -34,7 +34,7 @@ function MainContent() {
   const [selectedCategory, setSelectedCategory] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:8888/termekek")
+    axios.get("https://webshopnodedeploy.azurewebsites.net/termekek")
       .then(response => {
         setProducts(response.data.termekek);
       })
@@ -45,7 +45,7 @@ function MainContent() {
 
   const getProduct = (productId) =>{
 
-    axios.get(`http://localhost:8888/getOneTermek/${productId}`)
+    axios.get(`https://webshopnodedeploy.azurewebsites.net/getOneTermek/${productId}`)
     .then((response) => {
       console.log("Get Product Responded!");
       localStorage.setItem("product",JSON.stringify(response.data));
@@ -58,7 +58,7 @@ function MainContent() {
 
   const addToKosar = (productId) => {
     
-    axios.post("http://localhost:8888/addToKart",{productId, userID})
+    axios.post("https://webshopnodedeploy.azurewebsites.net/addToKart",{productId, userID})
       .then((response) => {
         console.log("Termék hozzáadva a kosárhoz: ", response.data);
         setCartData(response.data.kosar);
@@ -70,7 +70,7 @@ function MainContent() {
       });
   };
   const handleSearch = () => {
-    axios.get(`http://localhost:8888/keres?kategoria=${selectedCategory}`)
+    axios.get(`https://webshopnodedeploy.azurewebsites.net/keres?kategoria=${selectedCategory}`)
       .then(response => {
         setProducts(response.data.termekek);
       })
