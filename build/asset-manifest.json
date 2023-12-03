@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7914c7fc.css",
+    "main.js": "/static/js/main.4f015cd8.js",
+    "static/media/hofeherairforce.png": "/static/media/hofeherairforce.5743e8b65d43de78d18c.png",
+    "static/media/nagygatya.png": "/static/media/nagygatya.51d88d0b09d8eacb222f.png",
+    "static/media/nagypulcsi.png": "/static/media/nagypulcsi.482320a7378e95dacd6b.png",
+    "static/media/nagycipo.png": "/static/media/nagycipo.eabc87ddb6fd0fa21b44.png",
+    "static/media/fooldal_kep2.jpg": "/static/media/fooldal_kep2.65ec5dd66634bfb27942.jpg",
+    "static/media/nagypolo.png": "/static/media/nagypolo.517e01aefb954212e3d3.png",
+    "static/media/fooldal_kep1.jpg": "/static/media/fooldal_kep1.eb89930a9f3ebbcfd258.jpg",
+    "index.html": "/index.html",
+    "main.7914c7fc.css.map": "/static/css/main.7914c7fc.css.map",
+    "main.4f015cd8.js.map": "/static/js/main.4f015cd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7914c7fc.css",
+    "static/js/main.4f015cd8.js"
+  ]
+}
