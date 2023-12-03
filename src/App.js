@@ -13,6 +13,7 @@ import ModifyProduct from "./Product_components/modifyProduct";
 import ModifySupport from "./Other_components/SupportEdit";
 import QuestionAdd from "./Other_components/AddQuestion";
 import CheckoutPage from "./Other_components/checkout";
+import ModifyQuestion from "./Other_components/modifyQuestion";
 
 function Products() {
   return <MainContent />;
@@ -49,6 +50,7 @@ function App() {
           <Route path="/SupportEdit" element={<ModifySupport />} />
           <Route path="/AddQuestion" element={<QuestionAdd />} />
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/modifyQuestion" element={<ModifyQuestion />} />
         </Routes>
       </Router>
     </div>

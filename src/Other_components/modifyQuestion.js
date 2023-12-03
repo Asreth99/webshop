@@ -3,7 +3,7 @@ import "../css/Profile.css";
 import authService from "../services/auth.service";
 import axios from "axios";
 
-function ModifyProduct() {
+function ModifyQuestion() {
   const chosenQuestion = authService.getChosenQuestion();
   const [question, setQuestion] = useState(chosenQuestion.kerdes || '');
   const [answer, setAnswer] = useState(chosenQuestion.valasz || '');
@@ -52,4 +52,4 @@ function ModifyProduct() {
   );
 }
 
-export default ModifyProduct;
+export default ModifyQuestion;
