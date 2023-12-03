@@ -62,7 +62,7 @@ function MainContent() {
       .then((response) => {
         console.log("Termék hozzáadva a kosárhoz: ", response.data);
         setCartData(response.data.kosar);
-        window.location.reload();
+        
         
       })
       .catch((error) => {
@@ -165,7 +165,7 @@ function MainContent() {
               </div>
               <div className="btn" onClick={() => {
                 addToKosar(item.id);
-              
+                window.location.reload();
               } }>Kosárhoz ad</div>
 
               {user && user.role === "ROLE_ADMIN" && (
